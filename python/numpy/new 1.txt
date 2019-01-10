@@ -1,0 +1,12 @@
+01-10 14:49:42.705 13004-13129/? E/AndroidRuntime: FATAL EXCEPTION: MQTT Rec: user_25898-00000000-1427-ee35-ffff-ffff92adb735
+    Process: com.reiniot.client_v1, PID: 13004
+    java.lang.IllegalArgumentException
+        at org.eclipse.paho.client.mqttv3.MqttMessage.validateQos(MqttMessage.java:40)
+        at org.eclipse.paho.client.mqttv3.MqttMessage.setQos(MqttMessage.java:178)
+        at org.eclipse.paho.client.mqttv3.internal.wire.MqttPublish.<init>(MqttPublish.java:51)
+        at org.eclipse.paho.client.mqttv3.internal.wire.MqttWireMessage.createWireMessage(MqttWireMessage.java:189)
+        at org.eclipse.paho.client.mqttv3.internal.wire.MqttWireMessage.createWireMessage(MqttWireMessage.java:163)
+        at org.eclipse.paho.client.mqttv3.internal.wire.MqttInputStream.readMqttWireMessage(MqttInputStream.java:83)
+        at org.eclipse.paho.client.mqttv3.internal.CommsReceiver.run(CommsReceiver.java:107)
+        at java.lang.Thread.run(Thread.java:764)
+		17777871560 abcd12345
